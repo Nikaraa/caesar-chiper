@@ -1,1 +1,1 @@
-# caesar-chiper
+caesar cipher project for the odin project curriculum, using ruby!
