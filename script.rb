@@ -1,6 +1,6 @@
 def caesar_cipher(txt, shift)
   #split the txt in characters
-  p splitWord = txt.split("")
+  splitWord = txt.split("")
   #we must iterate and transform all the characters in numbers
   res = splitWord.map do |character|
     #if the character is between a-z
@@ -19,7 +19,7 @@ def caesar_cipher(txt, shift)
       until character < 91
         character = (character - 90) + 64
       end
-      character.chr
+        character.chr
     #if it is not, it returns the corrispective symbol or number that
     #we are not coding into ascii code, neither shifting
     else character
