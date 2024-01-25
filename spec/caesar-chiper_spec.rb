@@ -1,10 +1,19 @@
-require "../script.rb"
+require "./script.rb"
 
-describe Calculator do
-    describe "#add" do
-      it "returns the sum of two numbers" do
-        calculator = Calculator.new
-        expect(calculator.add(5, 2)).to eql(7)
-      end
-    end
+describe "#caesar_cipher" do
+  it "shifts correctly depending on how much user wanna shift" do
+    expect(caesar_cipher("h", 5)).to eql("m")
   end
+end
+
+describe "#caesar_cipher" do
+  it "works with capital letters" do
+    expect(caesar_cipher("A", 3)).to eql("D")
+  end
+end
+
+describe "#caesar_cipher" do
+    it "make all the letters join together without spaces" do
+      expect(caesar_cipher("hello", 3)).to_not eql("k, h, o, o, r")
+    end
+end
